@@ -6,141 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".ProfessionalActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/buttonFeed"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/navigation_bg"
-            android:text="Feed"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            app:backgroundTint="#38B6FF"
-            android:layout_gravity="center"
-            android:textAlignment="center"
-            android:textAllCaps="false"/>
-
-
-        <Button
-            android:id="@+id/buttonSessions"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/navigation_bg"
-            android:text="My sessions"
-            android:padding="10dp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            app:backgroundTint="#D8D8D8"
-            android:layout_gravity="center"
-            android:textAllCaps="false"/>
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:id="@+id/exit"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:background="@color/white"
-            android:scaleType="fitCenter"
-            android:src="@drawable/exit" />
-
-    </LinearLayout>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:layout_marginBottom="675dp"
-        android:background="@drawable/navigation_bg"
-        app:elevation="2dp"
+        android:background="@drawable/button_background"
+        app:elevation="5dp"
         app:itemIconSize="30dp"
         app:itemIconTint="@drawable/item_selector"
         app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutProf"
+        app:layout_constraintBottom_toBottomOf="@+id/rellayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu_items" />
 
-    <LinearLayout
-        android:id="@+id/linearLayoutProf"
+
+    <RelativeLayout
+        android:id="@+id/rellayout1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_pic"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
+            android:layout_margin="9dp"
+            android:background=""
+            android:scaleType="fitCenter"
+            android:src="@drawable/previous" />
+
+        <RelativeLayout
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:src="@drawable/prof2" />
+            android:background="@drawable/circle_border">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_margin="9dp"
+                android:background="@drawable/circle"
+                android:padding="3dp"
+                android:src="@drawable/prof2" />
+
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/profName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="15sp"
+            android:fontFamily="sans-serif-light"
             android:text="Jane Doe"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="50sp"
-            android:textStyle="bold" />
+            android:textColor="@color/white"
+            android:textSize="35sp" />
 
-        <TextView
-            android:id="@+id/profJob"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Software Engineer at Microsoft"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rellayout1"
+        app:layout_constraintTop_toEndOf="@id/rellayout1">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/profJob"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:text="Software Engineer at Microsoft"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="25sp" />-->
 
 
-        <TextView
-            android:id="@+id/profFee"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:padding="15dp"
-            android:text="50$/hour"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        <!--        <TextView-->
+        <!--            android:id="@+id/profFee"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:text="50$/hour"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold" />-->
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

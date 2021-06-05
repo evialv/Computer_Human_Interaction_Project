@@ -22,11 +22,11 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_margin="5dp"
-            android:background="@drawable/navigation_bg"
+            android:background="@drawable/button_background"
             android:text="Feed"
             android:textColor="@color/white"
             android:textSize="17sp"
-            app:backgroundTint="#38B6FF"
+
             android:layout_gravity="center"
             android:textAlignment="center"
             android:textAllCaps="false"/>
@@ -58,7 +58,7 @@
             android:layout_height="30dp"
             android:layout_margin="5dp"
             android:layout_gravity="center"
-            android:background="@color/white"
+            android:background=""
             android:scaleType="fitCenter"
             android:src="@drawable/exit" />
 
@@ -70,8 +70,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:layout_marginBottom="675dp"
-        android:background="@drawable/navigation_bg"
-        app:elevation="2dp"
+        android:background="@drawable/button_background"
+        app:elevation="5dp"
         app:itemIconSize="30dp"
         app:itemIconTint="@drawable/item_selector"
         app:labelVisibilityMode="unlabeled"
