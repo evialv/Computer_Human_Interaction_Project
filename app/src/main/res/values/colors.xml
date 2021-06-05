@@ -13,10 +13,13 @@
     <color name="colorPrimaryVariant">#CC03DAC5</color>
 
     <color name="accent">#49BEFF</color>
-    <color name="grey">#E5E5E5</color>
     <color name="solidCircle">#AAFFFFFF</color>
     <color name="circleBorder">#50FFFFFF</color>
-    <color name="gradEnd">#B372F6D3</color>
-    <color name="gradStart">#B34EC2D1</color>
+    <color name="gradEnd">#9972F6D3</color>
+    <color name="gradStart">#994EC2D1</color>
+
+    <color name="transparent">#00E4E4E4</color>
+    <color name="gray">#807D7D</color>
+    <color name="darkgray">#515050</color>
 
 </resources>
