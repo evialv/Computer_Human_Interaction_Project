@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val txtEmail: EditText = findViewById<EditText>(R.id.username)
         val txtPassword: EditText = findViewById<EditText>(R.id.password)
 
+
         buttonLogin.setOnClickListener {
 
             if(txtEmail.text.trim().isNotEmpty() || txtPassword.text.trim().isNotEmpty()){
