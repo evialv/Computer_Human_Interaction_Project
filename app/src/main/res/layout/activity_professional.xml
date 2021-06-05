@@ -38,7 +38,7 @@
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_margin="9dp"
-            android:background=""
+
             android:scaleType="fitCenter"
             android:src="@drawable/previous" />
 
@@ -83,40 +83,44 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rellayout1"
-        app:layout_constraintTop_toEndOf="@id/rellayout1">
+        app:layout_constraintTop_toBottomOf="@+id/bottomNav">
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/profJob"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_gravity="center"-->
-        <!--            android:layout_marginLeft="10dp"-->
-        <!--            android:layout_marginTop="10dp"-->
-        <!--            android:layout_marginRight="10dp"-->
-        <!--            android:text="Software Engineer at Microsoft"-->
-        <!--            android:textAlignment="center"-->
-        <!--            android:textColor="@color/black"-->
-        <!--            android:textSize="25sp" />-->
+                <TextView
+                    android:id="@+id/profJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Software Engineer at Microsoft"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
 
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/profFee"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_gravity="center"-->
-        <!--            android:layout_marginLeft="10dp"-->
-        <!--            android:layout_marginTop="10dp"-->
-        <!--            android:layout_marginRight="10dp"-->
-        <!--            android:padding="15dp"-->
-        <!--            android:text="50$/hour"-->
-        <!--            android:textAlignment="center"-->
-        <!--            android:textSize="20sp"-->
-        <!--            android:textStyle="bold" />-->
+                <TextView
+                    android:id="@+id/profFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="15dp"
+                    android:text="50$/hour"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBook"/>
     </RelativeLayout>
 
 

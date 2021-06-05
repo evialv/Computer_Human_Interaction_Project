@@ -58,7 +58,6 @@
             android:layout_height="30dp"
             android:layout_margin="5dp"
             android:layout_gravity="center"
-            android:background=""
             android:scaleType="fitCenter"
             android:src="@drawable/exit" />
 

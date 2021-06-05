@@ -26,7 +26,7 @@ class ProfessionalActivity : AppCompatActivity() {
         binding.profFee.text = fee
         binding.profilePic.setImageResource(imageId)
 
-        val buttonactiviy :Button= findViewById(R.id.button1)
+        val buttonactiviy :Button= findViewById(R.id.btnBook)
         buttonactiviy.setOnClickListener{
             val intent = Intent(this, CalendarBooking::class.java)
 
