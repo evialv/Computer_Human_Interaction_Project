@@ -17,7 +17,7 @@
         app:itemIconSize="30dp"
         app:itemIconTint="@drawable/item_selector"
         app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="@+id/rellayout2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu_items" />
@@ -117,12 +117,15 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnBook"/>
     </RelativeLayout>
 
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOk"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="395dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
