@@ -7,6 +7,21 @@
     android:layout_height="match_parent"
     tools:context=".CalendarBooking"
     android:id="@+id/CalendarBooking">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="675dp"
+        android:background="@drawable/button_background"
+        app:elevation="5dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_items" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -75,16 +90,19 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
+
         <TextView
             android:id="@+id/pick_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
+            android:drawableLeft="@drawable/clock"
+            android:drawablePadding="10dp"
             android:text="Pick a Date"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="30sp" />
-
+            android:textSize="30sp"
+            app:drawableLeftCompat="@drawable/email_24" />
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
