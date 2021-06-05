@@ -1,7 +1,9 @@
 package com.example.project_chi
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import com.example.project_chi.databinding.ActivityProfessionalBinding
 
 class ProfessionalActivity : AppCompatActivity() {
@@ -16,7 +18,7 @@ class ProfessionalActivity : AppCompatActivity() {
         val name = intent.getStringExtra("name")
         val job = intent.getStringExtra("job")
         val fee = intent.getStringExtra("fee")
-        val imageId = intent.getIntExtra("imageId", R.drawable.prof1)
+        val imageId = intent.getIntExtra("imageId", R.drawable.prof3)
 
         // set data to activity's elements
         binding.profName.text = name
@@ -24,5 +26,11 @@ class ProfessionalActivity : AppCompatActivity() {
         binding.profFee.text = fee
         binding.profilePic.setImageResource(imageId)
 
+        val buttonactiviy :Button= findViewById(R.id.button1)
+        buttonactiviy.setOnClickListener{
+            val intent = Intent(this, CalendarBooking::class.java)
+
+            startActivity(intent)
+        }
     }
 }

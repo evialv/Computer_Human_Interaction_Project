@@ -19,8 +19,8 @@ class ProfilesActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val imageId= intArrayOf(
-            R.drawable.prof2,R.drawable.prof2,R.drawable.prof2,R.drawable.prof2,R.drawable.prof2,
-            R.drawable.prof2,R.drawable.prof2,R.drawable.prof2,R.drawable.prof2
+            R.drawable.prof2,R.drawable.prof1,R.drawable.prof6,R.drawable.prof7,R.drawable.prof5,
+            R.drawable.prof4,R.drawable.prof8,R.drawable.prof10,R.drawable.prof9
         )
 
         val name= arrayOf(
@@ -49,11 +49,11 @@ class ProfilesActivity : AppCompatActivity() {
 
         val fee = arrayOf(
 
-            "50$/hour",
+            "40$/hour",
             "50$/hour",
             "100$/hour",
             "50$/hour",
-            "50$/hour",
+            "40$/hour",
             "50$/hour",
             "50$/hour",
             "100$/hour",
