@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:drawableLeft="@drawable/clock_32"
+        android:drawableLeft="@drawable/clock_coloured"
         android:drawablePadding="10dp"
 
         android:text="Select A Time Slot"
