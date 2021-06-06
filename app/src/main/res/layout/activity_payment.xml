@@ -30,28 +30,30 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
             android:background="@drawable/circle"
             android:padding="3dp"
             android:src="@drawable/prof2" />
 
         <TextView
             android:id="@+id/profName"
-            android:layout_width="226dp"
-            android:layout_height="43dp"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
             android:layout_alignStart="@+id/image"
             android:layout_alignEnd="@+id/image"
-            android:layout_marginStart="-150dp"
-            android:layout_marginEnd="-106dp"
+            android:layout_marginStart="-111dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="-152dp"
             android:fontFamily="sans-serif-light"
-
             android:text="Jane Doe"
             android:textAlignment="center"
+
             android:textColor="@color/white"
             android:textSize="35sp" />
 
         <TextView
             android:id="@+id/profDesc"
-            android:layout_width="410dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/image"
             android:layout_alignBottom="@+id/profName"
@@ -83,11 +85,11 @@
         app:layout_constraintTop_toBottomOf="@+id/rellayout1" />
 
     <TextView
+        android:padding="10dp"
         android:id="@+id/payment_sure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-
         android:drawablePadding="10dp"
         android:text="By clicking confirm session we will book your session with Jane and your card will be charged with 50$ for the sesson."
         android:textAlignment="center"

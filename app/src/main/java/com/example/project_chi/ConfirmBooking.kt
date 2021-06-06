@@ -19,7 +19,7 @@ class ConfirmBooking : AppCompatActivity() {
 
         var photo = findViewById<CircleImageView>(R.id.profile_pic)
         var proname = findViewById<TextView>(R.id.profName)
-        var projob = findViewById<TextView>(R.id.profJob)
+        var projob = findViewById<TextView>(R.id.profDesc)
 
         photo.setImageResource(imageId)
         proname.setText(name.toString())

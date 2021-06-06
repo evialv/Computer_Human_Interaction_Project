@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.cardview.widget.CardView
 import de.hdodenhof.circleimageview.CircleImageView
@@ -35,24 +36,32 @@ class TimeSlots : AppCompatActivity() {
         val slot5 = findViewById<AppCompatButton>(R.id.slot5)
         val slot6 = findViewById<AppCompatButton>(R.id.slot6)
 
-        click(slot1, name.toString(), job.toString(), fee.toString(), imageId)
-        click(slot2, name.toString(), job.toString(), fee.toString(), imageId)
-        click(slot3, name.toString(), job.toString(), fee.toString(), imageId)
-        click(slot4, name.toString(), job.toString(), fee.toString(), imageId)
-        click(slot5, name.toString(), job.toString(), fee.toString(), imageId)
-        click(slot6, name.toString(), job.toString(), fee.toString(), imageId)
+        val confirmbtn = findViewById<AppCompatButton>(R.id.button3)
+
+        click(slot1, name.toString(), job.toString(), fee.toString(), imageId, confirmbtn)
+        click(slot2, name.toString(), job.toString(), fee.toString(), imageId, confirmbtn)
+        click(slot3, name.toString(), job.toString(), fee.toString(), imageId, confirmbtn)
+        click(slot4, name.toString(), job.toString(), fee.toString(), imageId, confirmbtn)
+        click(slot5, name.toString(), job.toString(), fee.toString(), imageId, confirmbtn)
+        click(slot6, name.toString(), job.toString(), fee.toString(), imageId, confirmbtn)
 
     }
 
-    fun click(view: View, name: String, job: String, fee: String, imageId: Int){
+    fun click(view: View, name: String, job: String, fee: String, imageId: Int, confirmbtn: AppCompatButton ){
         val slot = view as AppCompatButton
+        val hours = slot.text.toString()
         val intent = Intent(this, Payment::class.java)
         slot.setOnClickListener {
-            intent.putExtra("name", name)
-            intent.putExtra("job", job)
-            intent.putExtra("fee", fee)
-            intent.putExtra("imageId", imageId)
-            startActivity(intent)
+
+            Toast.makeText(this, "You picked $hours session", Toast.LENGTH_SHORT).show()
+
+            confirmbtn.setOnClickListener {
+                intent.putExtra("name", name)
+                intent.putExtra("job", job)
+                intent.putExtra("fee", fee)
+                intent.putExtra("imageId", imageId)
+                startActivity(intent)
+            }
 
         }
     }

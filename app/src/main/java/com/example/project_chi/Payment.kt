@@ -34,7 +34,7 @@ class Payment : AppCompatActivity() {
         var profile_pic2 = findViewById<CircleImageView>(R.id.profile_pic2)
         profile_pic2.setImageResource(imageId)
 
-        val btnConfirm = findViewById<AppCompatButton>(R.id.button5)
+        val btnConfirm = findViewById<AppCompatButton>(R.id.button4)
         val intent = Intent(this, ConfirmBooking::class.java)
         btnConfirm.setOnClickListener {
 
