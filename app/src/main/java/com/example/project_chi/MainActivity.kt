@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
                 if(txtEmail.text.toString() == "prof@example.com" && txtPassword.text.toString() == "123"){
                     val intent = Intent(this, ProfilesActivity::class.java)
                     startActivity(intent)
+                    finish()
                 } else {
                     Toast.makeText(this, "Invalid email or password", Toast.LENGTH_SHORT).show()
                 }

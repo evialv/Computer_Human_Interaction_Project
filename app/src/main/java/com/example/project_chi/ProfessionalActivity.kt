@@ -29,6 +29,10 @@ class ProfessionalActivity : AppCompatActivity() {
         val buttonactiviy :Button= findViewById(R.id.btnBook)
         buttonactiviy.setOnClickListener{
             val intent = Intent(this, CalendarBooking::class.java)
+            intent.putExtra("name", name)
+            intent.putExtra("job", job)
+            intent.putExtra("fee", fee)
+            intent.putExtra("imageId", imageId)
 
             startActivity(intent)
         }

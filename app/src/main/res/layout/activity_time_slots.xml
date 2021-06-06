@@ -119,215 +119,93 @@
             android:columnOrderPreserved="false"
             android:rowCount="3">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card1"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/slot1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp"
+                android:elevation="3dp"
+                android:textSize="18sp"
+                android:text="9:00-10:00"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_button_book">
+            </androidx.appcompat.widget.AppCompatButton>
 
-                >
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:id="@+id/time1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="9:00-10:00"
-                        android:textColor="@color/black"
-                        android:textSize="18sp">
-
-                    </TextView>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card2"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/slot2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp"
+                android:text="10:00-11:00"
+                android:elevation="3dp"
+                android:background="@drawable/bg_button_book"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </androidx.appcompat.widget.AppCompatButton>
 
-                >
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:id="@+id/time2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="10:00-11:00"
-                        android:textColor="@color/black"
-                        android:textSize="18sp">
-
-                    </TextView>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card3"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/slot3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp"
+                android:elevation="3dp"
+                android:text="11:00-12:00"
+                android:background="@drawable/bg_button_book"
+                android:textColor="@color/black"
+                android:textSize="18sp">
 
-                >
+            </androidx.appcompat.widget.AppCompatButton>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:id="@+id/time3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="12:00-13:00"
-                        android:textColor="@color/black"
-                        android:textSize="18sp">
-
-                    </TextView>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card4"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/slot4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp"
+                android:elevation="3dp"
+                android:text="17:00-18:00"
+                android:background="@drawable/bg_button_book"
+                android:textColor="@color/black"
+                android:textSize="18sp">
 
-                >
+            </androidx.appcompat.widget.AppCompatButton>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:id="@+id/time4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="17:00-18:00"
-                        android:textColor="@color/black"
-                        android:textSize="18sp">
-
-                    </TextView>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card5"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/slot5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp"
+                android:elevation="3dp"
+                android:text="18:00-19:00"
+                android:background="@drawable/bg_button_book"
+                android:textColor="@color/black"
+                android:textSize="18sp">
 
-                >
+            </androidx.appcompat.widget.AppCompatButton>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:id="@+id/time5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="19:00-20:00"
-                        android:textColor="@color/black"
-                        android:textSize="18sp">
-
-                    </TextView>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card6"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/slot6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp"
+                android:elevation="3dp"
+                android:text="19:00-20:00"
+                android:background="@drawable/bg_button_book"
+                android:textColor="@color/black"
+                android:textSize="18sp">
 
-                >
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:id="@+id/time6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="20:00-21:00"
-                        android:textColor="@color/black"
-                        android:textSize="18sp">
-
-                    </TextView>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+            </androidx.appcompat.widget.AppCompatButton>
 
 
         </GridLayout>
