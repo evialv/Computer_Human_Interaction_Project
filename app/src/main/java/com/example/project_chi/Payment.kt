@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import de.hdodenhof.circleimageview.CircleImageView
 
 class Payment : AppCompatActivity() {
@@ -45,6 +46,35 @@ class Payment : AppCompatActivity() {
             startActivity(intent)
 
         }
+
+        val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.home -> {
+                    println("HEY")
+                    val i = Intent(applicationContext, ProfilesActivity::class.java)
+                    i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+                    i.putExtra("EXIT", true)
+                    startActivity(i)
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.settings -> {
+                    // put code here
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.search -> {
+                    // put code here
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.user -> {
+                    // put code here
+                    return@OnNavigationItemSelectedListener true
+                }
+            }
+            false
+        }
+
+        val menuBar = findViewById<BottomNavigationView>(R.id.bottomNav)
+        menuBar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
     }
 

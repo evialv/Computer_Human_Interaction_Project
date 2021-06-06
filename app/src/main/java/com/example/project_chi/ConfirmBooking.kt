@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import de.hdodenhof.circleimageview.CircleImageView
 
 class ConfirmBooking : AppCompatActivity() {
@@ -36,8 +37,36 @@ class ConfirmBooking : AppCompatActivity() {
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
             intent.putExtra("EXIT", true)
             startActivity(intent)
-
         }
+
+        val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.home -> {
+                    println("HEY")
+                    val i = Intent(applicationContext, ProfilesActivity::class.java)
+                    i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+                    i.putExtra("EXIT", true)
+                    startActivity(i)
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.settings -> {
+                    // put code here
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.search -> {
+                    // put code here
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.user -> {
+                    // put code here
+                    return@OnNavigationItemSelectedListener true
+                }
+            }
+            false
+        }
+
+        val menuBar = findViewById<BottomNavigationView>(R.id.bottomNav)
+        menuBar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
     }
 }

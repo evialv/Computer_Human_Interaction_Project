@@ -93,21 +93,43 @@ class ProfilesActivity : AppCompatActivity() {
 
         }
 
-        var intent = Intent(this, MySessionsActivity::class.java)
-        binding.buttonSessions.setOnClickListener {
-            startActivity(intent)
-        }
 
         binding.buttonFeed.setOnClickListener {
-            finish()
             startActivity(getIntent())
+            finish()
         }
 
+        val intent = Intent(this, MainActivity::class.java)
         binding.exit.setOnClickListener {
-            intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
+
+        val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.home -> {
+                    startActivity(getIntent())
+                    finish()
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.settings -> {
+                    // put code here
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.search -> {
+                    // put code here
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.user -> {
+                    // put code here
+                    return@OnNavigationItemSelectedListener true
+                }
+            }
+            false
+        }
+
+        val menuBar = binding.bottomNav
+        menuBar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
 
 
