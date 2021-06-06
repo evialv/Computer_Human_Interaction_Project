@@ -52,34 +52,6 @@ class CalendarBooking : AppCompatActivity() {
 
         }
 
-        val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.home -> {
-                    val intent = Intent(applicationContext, ProfilesActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-                    intent.putExtra("EXIT", true)
-                    startActivity(intent)
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.settings -> {
-                    // put code here
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.search -> {
-                    // put code here
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.user -> {
-                    // put code here
-                    return@OnNavigationItemSelectedListener true
-                }
-            }
-            false
-        }
-
-        val menuBar = findViewById<BottomNavigationView>(R.id.bottomNav)
-        menuBar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-
     }
 
 }

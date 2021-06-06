@@ -46,35 +46,6 @@ class TimeSlots : AppCompatActivity() {
         click(slot5, name.toString(), job.toString(), fee.toString(), imageId, confirmbtn)
         click(slot6, name.toString(), job.toString(), fee.toString(), imageId, confirmbtn)
 
-        val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.home -> {
-                    println("HEY")
-                    val i = Intent(applicationContext, ProfilesActivity::class.java)
-                    i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-                    i.putExtra("EXIT", true)
-                    startActivity(i)
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.settings -> {
-                    // put code here
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.search -> {
-                    // put code here
-                    return@OnNavigationItemSelectedListener true
-                }
-                R.id.user -> {
-                    // put code here
-                    return@OnNavigationItemSelectedListener true
-                }
-            }
-            false
-        }
-
-        val menuBar = findViewById<BottomNavigationView>(R.id.bottomNav)
-        menuBar.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-
     }
 
     fun click(view: View, name: String, job: String, fee: String, imageId: Int, confirmbtn: AppCompatButton ){
