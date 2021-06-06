@@ -67,14 +67,14 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/pick_date"
+        android:id="@+id/payment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:drawableLeft="@drawable/clock_32"
         android:drawablePadding="10dp"
 
-        android:text=""
+        android:text="Payment Confirmation"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -82,20 +82,86 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rellayout1" />
 
+    <TextView
+        android:id="@+id/payment_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+
+        android:drawablePadding="10dp"
+        android:text="By clicking confirm session we will book your session with Jane and your card will be charged with 50$ for the sesson."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment" />
+
+    <TextView
+        android:id="@+id/payment_sure_conf"
+        android:layout_width="387dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="148dp"
+
+        android:drawablePadding="10dp"
+        android:text="Do want us to confirm your session with Jane? "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle"
+        android:padding="3dp"
+        android:src="@drawable/prof2"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_sure_conf" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_background"
+        android:text="Confirm Session"
+        android:textColor="#fff"
+
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_sure"
+        app:layout_constraintVertical_bias="1.0" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
-        android:layout_marginBottom="675dp"
+        android:layout_marginTop="132dp"
         android:background="@drawable/button_background"
         app:elevation="5dp"
         app:itemIconSize="30dp"
         app:itemIconTint="@drawable/item_selector"
         app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="@+id/timeslots"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.909"
         app:menu="@menu/menu_items" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
