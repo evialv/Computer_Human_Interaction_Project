@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_chi">
-        <activity android:name=".Payment"></activity>
+        <activity android:name=".ConfirmBooking"></activity>
+        <activity android:name=".Payment" />
         <activity android:name=".TimeSlots" />
-        <activity android:name=".MySessionsActivity"></activity>
+        <activity android:name=".MySessionsActivity" />
         <activity android:name=".TimeSlots" />
         <activity android:name=".CalendarBooking" />
         <activity android:name=".ProfessionalActivity" />
