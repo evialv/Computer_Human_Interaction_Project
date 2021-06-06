@@ -17,3 +17,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+/.gradle-wrapper.properties
+/.build.gradle
