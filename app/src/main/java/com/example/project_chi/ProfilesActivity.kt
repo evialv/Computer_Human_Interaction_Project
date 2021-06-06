@@ -4,9 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.widget.ListView
+import androidx.appcompat.widget.AppCompatButton
 import com.example.project_chi.databinding.ActivityMainBinding
 import com.example.project_chi.databinding.ActivityProfilesBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ProfilesActivity : AppCompatActivity() {
 
@@ -89,6 +92,21 @@ class ProfilesActivity : AppCompatActivity() {
             startActivity(i)
 
         }
+
+        val intent = Intent(this, MySessionsActivity::class.java)
+        binding.buttonSessions.setOnClickListener {
+            startActivity(intent)
+        }
+
+        binding.buttonFeed.setOnClickListener {
+            finish()
+            startActivity(getIntent())
+        }
+
+        binding.exit.setOnClickListener {
+            finish()
+        }
+
 
     }
 }
