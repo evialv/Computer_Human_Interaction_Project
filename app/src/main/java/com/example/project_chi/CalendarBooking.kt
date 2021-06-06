@@ -36,7 +36,7 @@ class CalendarBooking : AppCompatActivity() {
         projob.setText(job.toString())
 
 //        val calendarView = findViewById<CalendarView>(R.id.calendar_view)
-        val i = Intent(this, TimeSlots::class.java)
+        var i = Intent(this, TimeSlots::class.java)
         val buttonContinue = findViewById<AppCompatButton>(R.id.button2)
 
         // button click listener
@@ -56,7 +56,7 @@ class CalendarBooking : AppCompatActivity() {
             when (item.itemId) {
                 R.id.home -> {
                     println("HEY")
-                    val i = Intent(applicationContext, ProfilesActivity::class.java)
+                    i = Intent(applicationContext, ProfilesActivity::class.java)
                     i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
                     i.putExtra("EXIT", true)
                     startActivity(i)
