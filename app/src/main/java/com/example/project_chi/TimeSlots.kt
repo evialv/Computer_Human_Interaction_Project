@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import androidx.cardview.widget.CardView
@@ -19,20 +20,20 @@ class TimeSlots : AppCompatActivity() {
         val fee = intent.getStringExtra("fee")
         val imageId = intent.getIntExtra("imageId", R.drawable.prof3)
 
-        val photo = findViewById<CircleImageView>(R.id.profile_pic)
-        val proname = findViewById<TextView>(R.id.profName)
-        val projob = findViewById<TextView>(R.id.profJob)
+        var photo = findViewById<CircleImageView>(R.id.profile_pic)
+        var proname = findViewById<TextView>(R.id.profName)
+        var projob = findViewById<TextView>(R.id.profDesc)
 
         photo.setImageResource(imageId)
         proname.setText(name.toString())
         projob.setText(job.toString())
 
-        val slot1 = findViewById<CardView>(R.id.slot1)
-        val slot2 = findViewById<CardView>(R.id.slot2)
-        val slot3 = findViewById<CardView>(R.id.slot3)
-        val slot4 = findViewById<CardView>(R.id.slot4)
-        val slot5 = findViewById<CardView>(R.id.slot5)
-        val slot6 = findViewById<CardView>(R.id.slot6)
+        val slot1 = findViewById<AppCompatButton>(R.id.slot1)
+        val slot2 = findViewById<AppCompatButton>(R.id.slot2)
+        val slot3 = findViewById<AppCompatButton>(R.id.slot3)
+        val slot4 = findViewById<AppCompatButton>(R.id.slot4)
+        val slot5 = findViewById<AppCompatButton>(R.id.slot5)
+        val slot6 = findViewById<AppCompatButton>(R.id.slot6)
 
         click(slot1, name.toString(), job.toString(), fee.toString(), imageId)
         click(slot2, name.toString(), job.toString(), fee.toString(), imageId)

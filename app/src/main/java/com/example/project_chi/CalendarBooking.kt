@@ -2,6 +2,7 @@ package com.example.project_chi
 import android.content.Intent
 import android.os.Bundle
 import android.widget.CalendarView
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 
@@ -25,9 +26,9 @@ class CalendarBooking : AppCompatActivity() {
         val fee = intent.getStringExtra("fee")
         val imageId = intent.getIntExtra("imageId", R.drawable.prof3)
 
-        val photo = findViewById<CircleImageView>(R.id.profile_pic)
-        val proname = findViewById<TextView>(R.id.profName)
-        val projob = findViewById<TextView>(R.id.profJob)
+        var photo = findViewById<CircleImageView>(R.id.profile_pic)
+        var proname = findViewById<TextView>(R.id.profName)
+        var projob = findViewById<TextView>(R.id.profDesc)
 
         photo.setImageResource(imageId)
         proname.setText(name.toString())
