@@ -36,7 +36,7 @@ class CalendarBooking : AppCompatActivity() {
         projob.setText(job.toString())
 
 //        val calendarView = findViewById<CalendarView>(R.id.calendar_view)
-        var i = Intent(this, TimeSlots::class.java)
+        val i = Intent(this, TimeSlots::class.java)
         val buttonContinue = findViewById<AppCompatButton>(R.id.button2)
 
         // button click listener
@@ -55,11 +55,10 @@ class CalendarBooking : AppCompatActivity() {
         val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home -> {
-                    println("HEY")
-                    i = Intent(applicationContext, ProfilesActivity::class.java)
-                    i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-                    i.putExtra("EXIT", true)
-                    startActivity(i)
+                    val intent = Intent(applicationContext, ProfilesActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+                    intent.putExtra("EXIT", true)
+                    startActivity(intent)
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.settings -> {
