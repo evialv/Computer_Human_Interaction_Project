@@ -3,5 +3,5 @@
 
     <item android:state_pressed="true" android:color="#ffffff"/>
     <item android:state_checked="true" android:color="#ffffff"/>
-    <item android:color="#e6e6e6"/>
+    <item android:color="#ffffff"/>
 </selector>

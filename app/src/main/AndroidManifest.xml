@@ -11,6 +11,8 @@
         android:theme="@style/Theme.Project_chi">
         <activity android:name=".Payment"></activity>
         <activity android:name=".TimeSlots" />
+        <activity android:name=".MySessionsActivity"></activity>
+        <activity android:name=".TimeSlots" />
         <activity android:name=".CalendarBooking" />
         <activity android:name=".ProfessionalActivity" />
         <activity android:name=".ProfilesActivity" />
