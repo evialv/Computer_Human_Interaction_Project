@@ -25,7 +25,7 @@ class ConfirmBooking : AppCompatActivity() {
         proname.setText(name.toString())
         projob.setText(job.toString())
 
-        val txtSure = findViewById<TextView>(R.id.payment_sure)
+        var txtSure = findViewById<TextView>(R.id.payment_sure)
         txtSure.setText("Your session with ${name.toString()} - ${job.toString()} has been confirmed!")
 
         val btnConfirm = findViewById<AppCompatButton>(R.id.button5)
