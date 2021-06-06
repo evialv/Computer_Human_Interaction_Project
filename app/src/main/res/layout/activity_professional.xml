@@ -211,7 +211,7 @@
             android:background="@drawable/bg_button_book"
             android:text="Book Session"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
+            android:textSize="17sp"
             android:layout_gravity="center"
             android:textAlignment="center"
             android:textAllCaps="false"/>
@@ -225,7 +225,7 @@
             android:background="@drawable/bg_button_book"
             android:text="Ratings"
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
+            android:textSize="17sp"
             android:layout_gravity="center"
             android:textAlignment="center"
             android:textAllCaps="false"/>

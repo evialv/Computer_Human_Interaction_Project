@@ -93,7 +93,7 @@ class ProfilesActivity : AppCompatActivity() {
 
         }
 
-        val intent = Intent(this, MySessionsActivity::class.java)
+        var intent = Intent(this, MySessionsActivity::class.java)
         binding.buttonSessions.setOnClickListener {
             startActivity(intent)
         }
@@ -104,8 +104,11 @@ class ProfilesActivity : AppCompatActivity() {
         }
 
         binding.exit.setOnClickListener {
+            intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
             finish()
         }
+
 
 
     }

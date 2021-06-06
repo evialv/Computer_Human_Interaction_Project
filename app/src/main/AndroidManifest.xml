@@ -13,7 +13,6 @@
         <activity android:name=".Payment" />
         <activity android:name=".TimeSlots" />
         <activity android:name=".MySessionsActivity" />
-        <activity android:name=".TimeSlots" />
         <activity android:name=".CalendarBooking" />
         <activity android:name=".ProfessionalActivity" />
         <activity android:name=".ProfilesActivity" />
