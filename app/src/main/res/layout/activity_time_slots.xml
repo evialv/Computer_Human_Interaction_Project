@@ -111,6 +111,7 @@
         app:layout_constraintTop_toBottomOf="@+id/pick_date">
 
         <GridLayout
+            android:listSelector="@drawable/list_selector"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alignmentMode="alignMargins"
